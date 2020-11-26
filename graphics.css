@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#game{
+    width: 400px;
+    height: 500px;
+    border: 3px solid blueviolet;
+    margin: auto;
+    overflow: hidden;
+}
+#obstacle{
+    width: 50px;
+    height: 500px;
+    background-color: rgba(117, 196, 0, 0.897);
+    position: relative;
+    left: 400px;
+    animation: obstacle 2s infinite linear;
+}
+@keyframes obstacle{
+    0%{left:400px}
+    100%{left:-50px}
+}
+#holepassthrough{
+    width: 50px;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    left: 400px;
+    top: -500px;
+    animation: obstacle 2s infinite linear;
+}
+#bird{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(219, 1, 1);
+    position: absolute;
+    top: 100px;
+    border-radius: 50%;
+}
